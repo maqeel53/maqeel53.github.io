@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Aqeel — Sr. SQA Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1f2733;
+    --muted:#64748b;
+    --navy:#0f2c4d;
+    --navy2:#163d68;
+    --accent:#16c79a;
+    --accent2:#27e0b3;
+    --chip:#eef6f4;
+    --line:#e6eaf0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:#f4f7fb;-webkit-font-smoothing:antialiased;line-height:1.6;}
+  a{color:var(--accent);}
+
+  /* HERO */
+  .hero{
+    background:linear-gradient(160deg,var(--navy),var(--navy2));
+    color:#dce7f2;text-align:center;padding:80px 20px 70px;position:relative;overflow:hidden;
+  }
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:linear-gradient(90deg,var(--accent),var(--accent2));}
+  .avatar{
+    width:110px;height:110px;border-radius:50%;margin:0 auto 22px;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Sora';font-weight:800;font-size:40px;color:#06311f;
+    box-shadow:0 10px 30px rgba(22,199,154,.4);
+  }
+  .hero h1{font-family:'Sora';font-size:42px;font-weight:800;color:#fff;letter-spacing:-.5px;}
+  .hero .role{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#06311f;background:var(--accent2);padding:7px 16px;border-radius:6px;}
+  .hero p{max-width:640px;margin:20px auto 0;font-size:15px;color:#cdd9e6;}
+  .hero .links{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  .hero .links a{
+    display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;text-decoration:none;
+    color:#e7f4ef;background:rgba(255,255,255,.08);border:1px solid rgba(39,224,179,.4);
+    padding:9px 16px;border-radius:24px;transition:.2s;
+  }
+  .hero .links a:hover{background:rgba(39,224,179,.18);}
+
+  /* SECTIONS */
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
+  section{padding:56px 0;}
+  .sec-title{font-family:'Sora';font-size:26px;font-weight:700;color:var(--navy);margin-bottom:8px;text-align:center;}
+  .sec-sub{text-align:center;color:var(--muted);font-size:14px;margin-bottom:36px;}
+
+  /* STATS */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 10px;text-align:center;box-shadow:0 4px 14px rgba(15,44,77,.05);}
+  .stat .num{font-family:'Sora';font-size:30px;font-weight:800;color:var(--navy);}
+  .stat .num span{color:var(--accent);}
+  .stat .lbl{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:6px;}
+
+  /* PROJECT CARDS */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:24px;box-shadow:0 4px 14px rgba(15,44,77,.05);transition:.2s;}
+  .card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,44,77,.12);}
+  .card h3{font-family:'Sora';font-size:17px;color:var(--ink);}
+  .card .tech{font-size:12px;color:#0c8f6e;font-weight:600;margin:6px 0 12px;}
+  .card p{font-size:13.5px;color:#41506a;}
+  .card .tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px;}
+  .tag{background:var(--chip);color:#0c8f6e;font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;}
+
+  /* SKILLS */
+  .skills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:760px;margin:0 auto;}
+  .skill{background:#fff;border:1px solid var(--line);color:var(--ink);font-size:13px;font-weight:500;padding:8px 15px;border-radius:24px;}
+
+  /* CONTACT / FOOTER */
+  footer{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#cdd9e6;text-align:center;padding:50px 20px;}
+  footer h2{font-family:'Sora';color:#fff;font-size:22px;margin-bottom:14px;}
+  footer a{color:var(--accent2);text-decoration:none;font-weight:600;}
+  footer .small{font-size:12px;color:#8fa6bd;margin-top:24px;}
+
+  @media(max-width:680px){
+    .stats{grid-template-columns:repeat(2,1fr);}
+    .grid{grid-template-columns:1fr;}
+    .hero h1{font-size:32px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="avatar">MA</div>
+  <h1>Muhammad Aqeel</h1>
+  <div class="role">Sr. SQA Engineer</div>
+  <p>7+ years in manual &amp; automation testing across POS, healthcare, web, VoIP and API platforms — specializing in AI-accelerated Playwright automation with Claude &amp; MCP tooling.</p>
+  <div class="links">
+    <a href="mailto:m.aqeel53@yahoo.com">✉ Email</a>
+    <a href="https://linkedin.com/in/muhammad-aqeel-583bbabb" target="_blank">in · LinkedIn</a>
+    <a href="https://github.com/maqeel53" target="_blank">⌥ GitHub</a>
+  </div>
+</header>
+
+<!-- STATS -->
+<section>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="num">7<span>+</span></div><div class="lbl">Years Experience</div></div>
+      <div class="stat"><div class="num">70–80<span>%</span></div><div class="lbl">Automation Boost</div></div>
+      <div class="stat"><div class="num">5h<span>→</span>20m</div><div class="lbl">Cycle Reduced</div></div>
+      <div class="stat"><div class="num">4<span>+</span></div><div class="lbl">Industry Domains</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <h2 class="sec-title">Key Projects</h2>
+    <p class="sec-sub">Selected automation work</p>
+    <div class="grid">
+      <div class="card">
+        <h3>POS Smoke Test Automation — AI-Accelerated</h3>
+        <div class="tech">Playwright · Cypress · Claude + MCP · Agentic Testing</div>
+        <p>Converted manual smoke tests into a robust automated suite for a restaurant POS platform. Replaced traditional automation with an AI-driven approach, boosting speed by 70–80% and cutting manual effort by ~70%.</p>
+        <div class="tags"><span class="tag">Playwright</span><span class="tag">POM</span><span class="tag">Claude</span><span class="tag">MCP</span></div>
+      </div>
+      <div class="card">
+        <h3>API Smoke Test Automation</h3>
+        <div class="tech">Postman · Cypress · AI-Assisted API Testing</div>
+        <p>Automated a fully manual API smoke test suite to 100% coverage, cutting the test cycle from 5 hours to just 20 minutes and dramatically accelerating release readiness.</p>
+        <div class="tags"><span class="tag">Postman</span><span class="tag">Cypress</span><span class="tag">API</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">Skills &amp; Tools</h2>
+    <p class="sec-sub">Manual · Automation · AI-assisted QA</p>
+    <div class="skills">
+      <span class="skill">Manual Testing</span>
+      <span class="skill">Playwright</span>
+      <span class="skill">Cypress</span>
+      <span class="skill">Selenium</span>
+      <span class="skill">TestNG / POM</span>
+      <span class="skill">API Testing (Postman/SOAP)</span>
+      <span class="skill">SQL / DB Testing</span>
+      <span class="skill">JMeter</span>
+      <span class="skill">BurpSuite / ZAP</span>
+      <span class="skill">Claude Code / CLI</span>
+      <span class="skill">MCP</span>
+      <span class="skill">Jira / TestRail</span>
+      <span class="skill">CI/CD · Jenkins</span>
+      <span class="skill">AWS</span>
+      <span class="skill">Java · Python · JavaScript</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer>
+  <h2>Let's connect</h2>
+  <p><a href="mailto:m.aqeel53@yahoo.com">m.aqeel53@yahoo.com</a> &nbsp;·&nbsp; <a href="https://linkedin.com/in/muhammad-aqeel-583bbabb" target="_blank">LinkedIn</a></p>
+  <p class="small">Ferozpur Road, Lahore, Pakistan · AWS Certified Solutions Architect — Associate</p>
+</footer>
+
+</body>
+</html>
