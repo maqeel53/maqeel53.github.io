@@ -73,6 +73,21 @@
   .card .tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px;}
   .tag{background:var(--chip);color:#0c8f6e;font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;}
 
+  /* EXPERIENCE TIMELINE */
+  .timeline{position:relative;max-width:760px;margin:0 auto;padding-left:30px;}
+  .timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--line);}
+  .tl-item{position:relative;margin-bottom:26px;}
+  .tl-item:last-child{margin-bottom:0;}
+  .tl-item::before{content:"";position:absolute;left:-30px;top:4px;width:18px;height:18px;border-radius:50%;background:#fff;border:3px solid var(--accent);box-shadow:0 0 0 3px #fff;}
+  .tl-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:baseline;}
+  .tl-role{font-family:'Sora';font-size:16px;font-weight:700;color:var(--ink);}
+  .tl-date{font-size:11.5px;font-weight:600;color:#fff;background:var(--accent);padding:3px 11px;border-radius:20px;white-space:nowrap;}
+  .tl-co{font-size:13px;font-weight:600;color:#0c8f6e;margin:3px 0 9px;}
+  .tl-co .place{color:var(--muted);font-weight:500;}
+  .tl-item ul{list-style:none;padding:0;}
+  .tl-item ul li{font-size:13.5px;line-height:1.55;color:#41506a;padding-left:18px;position:relative;margin-bottom:5px;}
+  .tl-item ul li::before{content:"▹";position:absolute;left:0;color:var(--accent);font-weight:700;}
+
   /* SKILLS */
   .skills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:760px;margin:0 auto;}
   .skill{background:#fff;border:1px solid var(--line);color:var(--ink);font-size:13px;font-weight:500;padding:8px 15px;border-radius:24px;}
@@ -119,8 +134,52 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- WORK EXPERIENCE -->
 <section style="background:#fff;">
+  <div class="wrap">
+    <h2 class="sec-title">Work Experience</h2>
+    <p class="sec-sub">7+ years across POS, Healthcare, Web &amp; VoIP</p>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-top"><span class="tl-role">Sr. QA Analyst</span><span class="tl-date">Oct 2025 – Present</span></div>
+        <div class="tl-co">Contour Software Pvt. Limited <span class="place">· POS — Food (US / Canada)</span></div>
+        <ul>
+          <li>Test a restaurant POS platform for US &amp; Canadian clients across order types, payments, deferred orders, loyalty, and table management.</li>
+          <li>Migrated the automation suite from Cypress to Playwright with Page Object Model, fixtures, and parallel cross-browser execution.</li>
+          <li>Drive AI-assisted automation with Claude Code/CLI/Desktop, Cursor &amp; Windsurf using MCP servers and Playwright agents — engineering agents that read user stories, generate test plans &amp; scripts, and auto-create bug tickets.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-top"><span class="tl-role">Sr. SQA Engineer</span><span class="tl-date">Oct 2024 – Feb 2025</span></div>
+        <div class="tl-co">Eon OneByte Pvt. Limited <span class="place">· Healthcare</span></div>
+        <ul>
+          <li>Led manual &amp; automation testing for healthcare web apps, ensuring accuracy, reliability, and data-privacy compliance.</li>
+          <li>Built automated regression suites with Cypress and validated data integrity using SQL queries.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-top"><span class="tl-role">Sr. Software Engineer — QA</span><span class="tl-date">Nov 2021 – Jul 2024</span></div>
+        <div class="tl-co">Ibex Global Solutions Pvt. Limited <span class="place">· Lahore</span></div>
+        <ul>
+          <li>Performed manual &amp; automation testing across QA and production web environments.</li>
+          <li>Wrote SQL queries, stored procedures, and jobs (SQL Server, MongoDB) for database testing and task automation.</li>
+          <li>Provided customer production support — reproducing issues and root-causing through log analysis.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-top"><span class="tl-role">Software Quality Assurance Engineer</span><span class="tl-date">Oct 2018 – Nov 2021</span></div>
+        <div class="tl-co">Amigo Software Pvt. Ltd. <span class="place">· Lahore</span></div>
+        <ul>
+          <li>Tested VoIP and call-recording solutions; ran functional, regression, UAT, smoke, usability &amp; GUI testing.</li>
+          <li>Conducted REST API testing (Postman) and SOAP API testing (SOAP UI); mentored junior testers and improved QA processes.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
   <div class="wrap">
     <h2 class="sec-title">Key Projects</h2>
     <p class="sec-sub">Selected automation work</p>
@@ -142,7 +201,7 @@
 </section>
 
 <!-- SKILLS -->
-<section>
+<section style="background:#fff;">
   <div class="wrap">
     <h2 class="sec-title">Skills &amp; Tools</h2>
     <p class="sec-sub">Manual · Automation · AI-assisted QA</p>
